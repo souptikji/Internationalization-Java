@@ -1,4 +1,3 @@
-package collation;
 
 /*
 GBC - A convenience class to tame the GridBagLayout

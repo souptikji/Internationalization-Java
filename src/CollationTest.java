@@ -1,4 +1,3 @@
-package collation;
 
 import java.awt.*;
 import java.awt.event.*;
