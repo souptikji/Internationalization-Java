@@ -5,8 +5,6 @@ import javax.swing.*;
 /**
    A combo box that lets users choose from among static field
    values whose names are given in the constructor.
-   @version 1.14 2012-01-26
-   @author Cay Horstmann
 */
 public class EnumCombo extends JComboBox<String>
 { 

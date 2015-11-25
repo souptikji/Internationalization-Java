@@ -9,8 +9,6 @@ import javax.swing.*;
 
 /**
  * This program demonstrates collating strings under various locales.
- * @version 1.14 2012-01-26
- * @author Cay Horstmann
  */
 public class CollationTest
 {
