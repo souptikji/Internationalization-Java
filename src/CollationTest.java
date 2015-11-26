@@ -84,6 +84,7 @@ class CollationFrame extends JFrame
       strings.add("o\uFB03ce");
       strings.add("Java\u2122");
       strings.add("JavaTM");
+      strings.add("\u00C5bcde");
       updateDisplay();
 
       addButton.addActionListener(new ActionListener()
@@ -91,6 +92,7 @@ class CollationFrame extends JFrame
             public void actionPerformed(ActionEvent event)
             {
                strings.add(newWord.getText());
+               System.out.println("New word added is->"+newWord.getText());
                updateDisplay();
             }
          });
