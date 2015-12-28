@@ -9,8 +9,6 @@ import javax.swing.*;
 
 /**
  * This program demonstrates formatting dates under various locales.
- * @version 1.13 2007-07-25
- * @author Cay Horstmann
  */
 public class DateFormatTest
 {
