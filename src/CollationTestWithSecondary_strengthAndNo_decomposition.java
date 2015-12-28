@@ -20,7 +20,14 @@ public class CollationTestWithSecondary_strengthAndNo_decomposition
 	    unicodeStringList.add("JavaTM");
 	    unicodeStringList.add("\u00C5bcde");
 	    
+	    //append to StringBuilder and toString
+	    StringBuilder sb = new StringBuilder(unicodeStringList.get(0));
+	    sb.append("+");
+	    sb.append("\u00C5ngstr\u00F6m");
+	    
 	    System.out.println("Here is the standard list of unicode strings ->");
 	    System.out.println(unicodeStringList);
+	    System.out.println("SB to string->"+sb.toString());
+	    
 	}
 }

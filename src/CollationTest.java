@@ -124,6 +124,7 @@ class CollationFrame extends JFrame
       currentCollator.setDecomposition(decompositionCombo.getValue());
 
       Collections.sort(strings, currentCollator);
+      System.out.println("main test's strings->"+strings);
 
       sortedWords.setText("");
       for (int i = 0; i < strings.size(); i++)
