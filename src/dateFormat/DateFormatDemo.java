@@ -60,16 +60,23 @@ public class DateFormatDemo {
          DateFormat.LONG,
          DateFormat.FULL
       };
+      
+      String[] styleNames = {
+    	         "DateFormat.DEFAULT",
+    	         "DateFormat.SHORT", 
+    	         "DateFormat.MEDIUM",
+    	         "DateFormat.LONG",
+    	         "DateFormat.FULL"
+    	      };
 
       System.out.println();
       System.out.println("Locale: " + currentLocale.toString());
-      //System.out.println();
 
       for (int k = 0; k < styles.length; k++) {
          formatter = 
             DateFormat.getDateInstance(styles[k], currentLocale);
          result = formatter.format(today);
-         System.out.println(result);
+         System.out.println(styleNames[k]+"--> "+result);
       }
    }
 
@@ -107,24 +114,19 @@ public class DateFormatDemo {
           new Locale("en","US")
       };
      
+      System.out.println("---------------------DateFormat.DEFAULT--------------------------------------");
       for (int i = 0; i < locales.length; i++) {
          displayDate(locales[i]);
       }
-
-      System.out.println("-----------------------------------------------------------");
-      showDateStyles(new Locale("en","US"));
-      showDateStyles(new Locale("fr","FR"));
-      showDateStyles(new Locale("de","DE"));
       System.out.println("-----------------------------------------------------------");
 
-      showTimeStyles(new Locale("en","US"));
-      showTimeStyles(new Locale("fr","FR"));
-      showTimeStyles(new Locale("de","DE"));
-      System.out.println("-----------------------------------------------------------");
- 
-      showBothStyles(new Locale("en","US"));
-      showBothStyles(new Locale("fr","FR"));
-      showBothStyles(new Locale("de","DE"));
+      System.out.println("");
+
+      System.out.println("---------------------ALL DATE STYLES--------------------------------------");
+      for (int i = 0; i < locales.length; i++)
+    	  {
+    		  showDateStyles(locales[i]);
+    	  }
       System.out.println("-----------------------------------------------------------");
 
    }
